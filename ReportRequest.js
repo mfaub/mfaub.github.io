@@ -31,7 +31,9 @@ document.getElementById('reportForm').addEventListener('submit', async function 
             start_date: startDate,
             end_date: endDate,
             loyalty_program_id: null,
-            store_id: null
+            store_id: storeid,
+            store_list_id: storelistid
+            
         },
         output_format: "csv",
         output_params: {
@@ -101,8 +103,8 @@ document.getElementById('reportForm').addEventListener('submit', async function 
     const response = await fetch('https://cors-anywhere.herokuapp.com/https://api-staging.sparkfly.com/auth', {
       method: 'GET',
       headers: {
-        'X-Auth-Identity': 'sparkflygreatclips',
-        'X-Auth-Key': '48be79c084f78975dcde63fb40c97439'
+        'X-Auth-Identity': 'attentive_sandbox_pos',
+        'X-Auth-Key': 'eada95bebf6f26ae0a7066cad7d75e71'
       }
     });
     
