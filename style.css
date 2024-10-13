@@ -21,4 +21,29 @@ body {
 .navbar a:hover {
   color: #ffffff;
 }
+#submit-request {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
 
+#submit-request:hover {
+  background-color: #0056b3;
+}
+
+#loading-spinner {
+  font-size: 16px;
+  color: #007bff;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+}
+
+#success-message {
+  color: green;
+  font-weight: bold;
+}
