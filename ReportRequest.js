@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.style.display = 'none';
             document.getElementById('loading-spinner').style.display = 'block';
 
-            const response = await fetch('https://api-staging.sparkfly.com/v2.0/reporting/report_requests', {
+            const response = await fetch('http://localhost:5000/api/report_requests', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     async function fetchAuthToken() {
-        const response = await fetch('https://api-staging.sparkfly.com/auth', {
+        const response = await fetch('http://localhost:5000/api/auth', {
             method: 'GET',
             headers: {
                 'X-Auth-Identity': 'attentive_sandbox_pos',
