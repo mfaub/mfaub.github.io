@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem a Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="redeem-container">
+        <h2>Redeem a Code</h2>
+        <form id="redeemForm">
+            <label for="siteId">Site ID:</label>
+            <input type="text" id="siteId" name="siteId" required>
+            
+            <label for="businessDate">Business Date:</label>
+            <input type="date" id="businessDate" name="businessDate" required>
+            
+            <label for="code">Enter Code:</label>
+            <input type="text" id="code" name="code" required>
+            
+            <button type="submit">Redeem</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="js/redeem.js"></script>
+</body>
+</html>

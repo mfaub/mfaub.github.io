@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store List Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="store-checker-container">
+        <h2>Store List Checker</h2>
+        <form id="storeListForm">
+            <label for="storeId">Enter Store ID:</label>
+            <input type="text" id="storeId" name="storeId" required>
+            <button type="submit">Check Store Lists</button>
+        </form>
+        <div id="message"></div>
+        <table id="storeListTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Store List Name</th>
+                </tr>
+            </thead>
+            <tbody id="storeListBody"></tbody>
+        </table>
+    </div>
+    <script src="js/storeList.js"></script>
+</body>
+</html>

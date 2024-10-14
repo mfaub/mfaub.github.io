@@ -1,0 +1,1 @@
+// Full storeList.js code provided earlier

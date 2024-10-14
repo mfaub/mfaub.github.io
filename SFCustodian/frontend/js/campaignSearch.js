@@ -1,0 +1,1 @@
+// Full campaignSearch.js code provided earlier

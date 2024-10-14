@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign and Offer Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <h2>Campaign and Offer Search</h2>
+        <form id="searchForm">
+            <label for="searchType">Search Type:</label>
+            <select id="searchType" name="searchType" required>
+                <option value="campaignId">Campaign ID</option>
+                <option value="campaignXid">Campaign XID</option>
+                <option value="offerId">Offer ID</option>
+            </select>
+
+            <label for="searchValue">Enter Search Value:</label>
+            <input type="text" id="searchValue" name="searchValue" required>
+
+            <button type="submit">Search</button>
+        </form>
+        <div id="message"></div>
+        <table id="searchTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Landing Page URL</th>
+                </tr>
+            </thead>
+            <tbody id="searchResultsBody"></tbody>
+        </table>
+    </div>
+    <script src="js/campaignSearch.js"></script>
+</body>
+</html>
