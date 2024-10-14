@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFCustodian Login</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to a CSS file for styling (optional) -->
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="pin">Enter PIN:</label>
+            <input type="password" id="pin" name="pin" required>
+            
+            <label for="accountType">Select Account:</label>
+            <select id="accountType" name="accountType" required>
+                <option value="solutions">Solutions</option>
+                <option value="greatClips">Great Clips</option>
+            </select>
+            
+            <button type="submit">Login</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="login.js"></script> <!-- This script handles the login logic -->
+</body>
+</html>
